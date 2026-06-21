@@ -55,7 +55,7 @@ public class TransactionListener {
                     transaction,
                     Incentive.class
             );
-            
+
             //set balances
             sender.setBalance(sender.getBalance() - transaction.getAmount());
             recipient.setBalance(recipient.getBalance() + transaction.getAmount() + incentive.getAmount());
